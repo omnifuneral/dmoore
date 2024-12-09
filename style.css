@@ -1,10 +1,10 @@
 /* General Reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark gray background */
+  color: #e0e0e0; /* Light gray text */
   line-height: 1.6;
-  background-color: #f4f4f9;
-  color: #333;
 }
 
 /* Navbar */
@@ -12,90 +12,103 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #333;
-  color: #fff;
+  background: #1a1a1a; /* Slightly lighter dark */
+  color: #e0e0e0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 .navbar a {
-  color: #fff;
+  color: #00ff00; /* Neon green links */
   text-decoration: none;
   margin: 0 10px;
+  font-family: 'IBM Plex Mono', monospace;
 }
 .navbar a:hover {
-  text-decoration: underline;
-}
-.dark-mode-toggle {
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
+  color: #00c8ff; /* Neon blue on hover */
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: #333;
-  color: #fff;
+  background: #1a1a1a;
 }
 .hero h1 {
   font-size: 3rem;
+  color: #00ff00; /* Neon green */
+  font-family: 'IBM Plex Mono', monospace;
+}
+.hero p {
+  font-size: 1.2rem;
 }
 .hero-buttons .button {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background: #007BFF;
-  color: #fff;
+  background: #00ff00;
+  color: #121212;
   text-decoration: none;
   border-radius: 5px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
 }
 .hero-buttons .button.secondary {
-  background: #555;
+  background: #00c8ff;
+  color: #121212;
 }
 .hero-buttons .button:hover {
-  background: #0056b3;
+  opacity: 0.8;
 }
 
 /* Sections */
 .section {
   padding: 50px 20px;
-  margin: 20px;
-  background: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #1a1a1a;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.section h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #00ff00;
+  margin-bottom: 15px;
+}
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.section li {
+  margin-bottom: 20px;
+  border-left: 4px solid #00ff00;
+  padding-left: 15px;
 }
 
 /* Footer */
 .footer {
   text-align: center;
-  background: #333;
-  color: #fff;
+  background: #1a1a1a;
+  padding: 20px;
 }
 .footer a {
-  color: #007BFF;
+  color: #00ff00;
   text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
 }
 .footer a:hover {
-  text-decoration: underline;
+  color: #00c8ff;
 }
 .back-to-top {
-  display: block;
   margin-top: 20px;
-  color: #fff;
+  display: inline-block;
+  color: #00c8ff;
+  text-decoration: none;
 }
 
-/* Dark Mode */
-body.dark {
-  background-color: #121212;
-  color: #f4f4f9;
-}
-body.dark .navbar,
-body.dark .footer {
-  background: #222;
-}
+/* Add Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto:wght@400;700&display=swap');
 
