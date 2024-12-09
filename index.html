@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylan Moore</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 50px;
-            background-color: #333;
-            color: #fff;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin: 10px 0 0;
-        }
-        main {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        main h2 {
-            font-size: 2rem;
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #00bcd4;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dylan Thomas Moore - Personal homepage and CV">
+  <link rel="stylesheet" href="style.css">
+  <title>Dylan Thomas Moore</title>
 </head>
 <body>
-    <header>
-        <h1>Dylan Moore</h1>
-        <p>Developer | Writer | Explorer</p>
-    </header>
-    <main>
-        <h2>Welcome</h2>
-        <p>This is the personal homepage of Dylan Moore. Here, you'll find information about my work, my journey, and my passion for creating thoughtful, ethical software and exploring the human experience through writing and technology.</p>
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="https://rustic.software">Rustic Software</a> - My software projects and experiments.</li>
-            <li><a href="https://omnifuneral.com">Omnifuneral</a> - A blog where ideas run wild.</li>
-            <li><a href="mailto:youremail@example.com">Email Me</a> - Let's connect!</li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; 2024 Dylan Moore. Built with care and curiosity.</p>
-    </footer>
+  <div id="top"></div>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Dylan Thomas Moore</h1>
+    <p>Systems Thinker | Creative Technologist | Ethical Technologist</p>
+    <div class="hero-buttons">
+      <a href="#about" class="button">Learn More</a>
+      <a href="resume.pdf" class="button secondary">Download CV</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Dylan Thomas Moore—a systems thinker, creative technologist, and dedicated craftsman of elegant solutions in both code and life. Based in Pennsylvania, I bring a mix of technical expertise, creative curiosity, and intentional living to everything I do.
+    </p>
+    <p>
+      With certifications like Linux+, Cloud+, and Azure Fundamentals, I’ve translated my knowledge into real-world solutions—managing systems, solving tough technical challenges, and building processes that work as smoothly as the machines they run on. I’m passionate about free and open-source software and strive to build tools and systems that reflect values of simplicity, sustainability, and meaningful use.
+    </p>
+    <p>
+      Beyond work, I’m an artist and musician who loves exploring the intersection of creativity and technology. Whether repairing hardware, hiking trails, or diving into philosophy, I approach life with curiosity, intentionality, and a drive to learn and grow.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a href="https://rustic.software" target="_blank">rustic.software</a> - Showcase of FOSS tools and software projects.
+      </li>
+      <li>
+        <a href="https://omnifuneral.com" target="_blank">omnifuneral.com</a> - Blog for personal and creative writing.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>Thomas Edison State University</strong> - Trenton, NJ (2022 – Present)
+        <p>A.S. in Computer Science (GPA: 4.0); B.S. currently in progress.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="section">
+    <h2>Work</h2>
+    <ul>
+      <li>
+        <strong>PC Support Tech II</strong>, <em>Evergy</em> - Kansas City, MO (2022–2023)
+        <p>Supported 500+ users, managed permissions with Active Directory, and solved complex technical issues in a heterogeneous environment.</p>
+      </li>
+      <li>
+        <strong>Self-Employed</strong>, <em>Moore Home Improvements</em> - Philadelphia, PA (2014–2022)
+        <p>Performed light plumbing, carpentry, electrical work, and landscaping for residential and small business clients.</p>
+      </li>
+      <li>
+        <strong>Specialty Coffee Professional</strong> - Philadelphia, PA & NJ (2015–2021)
+        <p>Managed high-volume cafes, oversaw quality control, and developed innovative products in a production and product development role.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="section footer">
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:moore.dylan.t@protonmail.com">moore.dylan.t@protonmail.com</a></p>
+    <p>
+      <a href="https://github.com/omnifuneral" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/dylan-thomas-moore-6a92b3271/" target="_blank">LinkedIn</a>
+    </p>
+    <a href="#top" class="back-to-top">Back to Top ↑</a>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
-
+i
